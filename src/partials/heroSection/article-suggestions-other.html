@@ -1,0 +1,102 @@
+<row class="weekend-pursuits-header">
+    <columns>
+        <p class="hero-top-heading">
+            WEEKEND PURSUITS
+        </p>
+        <hr class="hero-divider"/>
+
+    </columns>
+</row>
+
+{{#each newsletter.articleSuggestionsOther}}
+    <row class="suggestion-row">
+        <columns small="6" class="suggestion-image-col">
+            <a href="{{this.articleLink}}">
+                <img src="{{this.articleIMG}}" 
+                class="suggestion-image"
+                />
+            </a>
+        </columns>
+        <columns small="6" class="suggestion-heading-col">
+            {{#if this.articleNewsLogoIMG}}
+            <a href="{{this.articleLink}}">
+                <img 
+                    src="{{this.articleNewsLogoIMG}}"
+                    class="suggestions-news-logo"
+                />
+            </a>
+            {{/if}}
+            <a href="{{this.articleLink}}">
+                <p class="suggestion-heading-bottom">
+                    <span class="suggestion-heading-bottom-bold">{{this.suggestionHeading.suggestionHeadingBold}} </span>
+                    {{this.suggestionHeading.suggestionSubHeading}} 
+
+                    {{# if this.suggestionHeading.suggestionSubHeadingIT}}
+                        <em>
+                            {{this.suggestionHeading.suggestionSubHeadingIT}}
+                        </em>
+                    {{/if}}
+                </p>
+                <a href="{{this.articleLink}}" class="hero-article-link">{{this.heroArticleLink}}</a>
+            </a>
+        </columns>
+    </row>
+    <hr />
+{{/each}}
+
+
+
+    <!-- <row class="suggestion-row">
+        <columns small="6" class="suggestion-image-col">
+            <img src="{{ root }}/assets/img/image7.jpg" 
+            class="suggestion-image"
+            />
+        </columns>
+        <columns small="6" class="suggestion-heading-col">
+            <p class="suggestion-heading-bottom">
+                <span class="suggestion-heading-bottom-bold">One thing to listen to: </span>
+                Michelle Obama shares her best parenting tips on the first episode of her new show, <em>The Light Podcast.</em>            
+            </p>            
+            <a class="hero-article-link">CNBC ></a>
+        </columns>
+    </row>
+
+    <hr />
+    <row class="suggestion-row">
+        <columns small="6" class="suggestion-image-col">
+            <img src="{{ root }}/assets/img/image8.jpg" 
+            class="suggestion-image"
+            />
+        </columns>
+        <columns small="6" class="suggestion-heading-col">
+            <img 
+                src="{{ root }}/assets/img/news-logo.png"
+                class="suggestions-news-logo"
+            />
+            <p class="suggestion-heading-bottom">
+                <span class="suggestion-heading-bottom-bold">One thing to read: </span>
+                Feel like you never have enough time? This book offers a radical solution.            
+            </p>
+            <a class="hero-article-link">THE NEW YORKER ></a>
+        </columns>
+    </row>
+
+    <hr />
+    <row class="suggestion-row">
+        <columns small="6" class="suggestion-image-col">
+            <img src="{{ root }}/assets/img/image9.jpg" 
+            class="suggestion-image"
+            />
+        </columns>
+        <columns small="6" class="suggestion-heading-col">
+            <img 
+                src="{{ root }}/assets/img/news-logo.png"
+                class="suggestions-news-logo"
+            />
+            <p class="suggestion-heading-bottom">
+                <span class="suggestion-heading-bottom-bold">One thing to eat: </span>
+                A surprising take on your grandma’s chicken-pot pie.
+            </p>
+            <a class="hero-article-link">DELISH ></a>
+        </columns>
+    </row> -->

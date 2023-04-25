@@ -1,0 +1,86 @@
+    {{#each newsletter.articleSuggestions}}
+    <hr/>
+
+    <row class="suggestion-row">
+        <columns small="6" class="suggestion-image-col">
+            <a href="{{this.articleLink}}">
+                <img src="{{this.articleIMG}}" 
+                class="suggestion-image"
+                />
+            </a>
+        </columns>
+        <columns small="6" class="suggestion-heading-col">
+            {{#if this.articleAudioLogoIMG}}
+            <a href="{{this.articleLink}}">
+                <img 
+                    src="{{this.articleAudioLogoIMG}}"
+                    class="hero-newsaudio-logo"
+                />
+            </a>
+            {{/if}}
+            {{#if this.articleNewsLogoIMG}}
+            <a href="{{this.articleLink}}">
+                <img 
+                    src="{{this.articleNewsLogoIMG}}"
+                    class="suggestions-news-logo"
+                />
+            </a>
+            {{/if}}
+            <a href="{{this.articleLink}}">
+                <p class="suggestion-heading">
+                    {{this.suggestionHeading}}
+                </p>
+                <p class="suggestion-sub-heading">{{this.suggestionSubHeading}}</p>
+                <a href="{{this.articleLink}}" class="hero-article-link">{{this.heroArticleLink}}</a>
+            </a>
+        </columns>
+    </row>
+
+    {{/each}}
+
+    <!-- <hr />
+    <row class="suggestion-row">
+        <columns small="6" class="suggestion-image-col">
+            <img src="{{ root }}/assets/img/image3.jpg" 
+            class="suggestion-image"
+            />
+        </columns>
+        <columns small="6" class="suggestion-heading-col">
+            <p class="suggestion-heading">He’s Earning $64,000 a Year — and Facing Eviction</p>
+            <p class="suggestion-sub-heading">How a little pink sheet made one man question his future and the entire American dream.</p>
+            <a class="hero-article-link">THE GUARDIAN ></a>
+        </columns>
+    </row>
+
+    <hr />
+    <row class="suggestion-row">
+        <columns small="6" class="suggestion-image-col">
+            <img src="{{ root }}/assets/img/image4.jpg" 
+            class="suggestion-image"
+            />
+        </columns>
+        <columns small="6" class="suggestion-heading-col">
+            <img 
+                src="{{ root }}/assets/img/news-logo.png"
+                class="suggestions-news-logo"
+            />
+            <p class="suggestion-heading">The Keys to an Anti-Inflammatory Diet</p>
+            <p class="suggestion-sub-heading">Which foods to eat — and which to avoid — to boost your overall health.</p>
+            <a class="hero-article-link">COOKING LIGHT ></a>
+        </columns>
+    </row>
+
+    <hr />
+    <row class="suggestion-row">
+        <columns small="6" class="suggestion-image-col">
+            <img src="{{ root }}/assets/img/image5.jpg" 
+            class="suggestion-image"
+            />
+        </columns>
+        <columns small="6" class="suggestion-heading-col">
+            <p class="suggestion-heading">Meet the Men Paying to Have Their Jaws Broken</p>
+            <p class="suggestion-sub-heading">A growing number of guys are shelling out thousands to have their jawlines reshaped, all in the name of “manliness.”</p>
+            <a class="hero-article-link">BRITISH GQ ></a>
+        </columns>
+    </row> -->
+    

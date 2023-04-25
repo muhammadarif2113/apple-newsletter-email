@@ -1,59 +1,397 @@
-// These are the styles to make some of the templates look extra nice.
-// Feel free to remove these styles for production!
 
-// Body Styles 
 body,
 html, 
 .body {
-  background: #f3f3f3 !important;
+  background: #ffffff;
+  box-sizing: border-box;
 }
 
-.container.header {
-  background: #f3f3f3;
+
+
+.header{
+  background: #FF2D55;
+  background-color: #FF2D55;
+
+  // @media screen and (max-width: 35em){ //small 550px
+  //   background: purple;
+  //   background-color: purple;
+  // }
+
+
+  .columns{
+    padding-top: 27px;
+
+      .header-logo{
+        padding-left: 4px;
+        width:28px;  
+      } 
+  }
 }
 
-.body-drip {
-  border-top: 8px solid #663399;
+.sub-header{
+  background: #FF2D55;
+  background-color: #FF2D55;
+
+
+  .good-morning-span{
+    padding-left: 4px;
+    display: block;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 26px; 
+    font-family: arial, sans-serif;
+
+    @media screen and (max-width: 35em){ //small 550px
+      font-size: 32px; 
+
+    }
+  }
+  .apple-news-spanCtn{
+    line-height: 0.6;
+    padding-left: 4px;
+
+    @media screen and (max-width: 35em){ //small 550px
+      line-height: 0.8;
+
+    }
+
+    .from-span{
+      color: #FFCBDD;
+      font-weight: 700;
+      font-size: 26px; 
+
+      @media screen and (max-width: 35em){ //small 550px
+        font-size: 32px; 
+      }
+    }
+    
+    .apple-news-span{
+      margin-left: 3px;
+      font-size: 26px;
+      font-weight: 700;
+      color: #FF2D55;
+      background-color: #FFE7B7;
+
+      @media screen and (max-width: 35em){ //small 550px
+        background-color: #FF2D55;
+        color: #FFCBDD;
+        font-size: 32px; 
+
+
+  
+      }
+    }
+  }
+  .date-header-span1{
+    display: block;
+    padding-top: 10px;
+    color: #FFFFFF;
+    padding-left: 4px;
+    font-size: 14px;
+  }
+  .date-header-span2{
+    color: #FFFFFF;
+    padding-left: 4px;
+    font-size: 14px;
+  }
+
+  
 }
 
-// Full Width Headers
-.header {
-  background: #8a8a8a;
-}
 
-.header .columns {
-  padding-bottom: 0;
-}
+.news-article-section{
+  background: #f0f1f2;
+  background-image: linear-gradient(180deg, #ff2d55 35px, #00000000 35px);
 
-.header p {
-  color: #fff;
-  padding-top: 15px;
-}
+  @media screen and (max-width: 35em){
+    background-color: rgb(220, 220, 220);
+  }
 
-.header .wrapper-inner {
-  padding: 20px;
-}
+  .news-article-heroCtn{
+    text-align: left;
+    padding: 20px 20px;
 
-.header .container {
-  background: transparent;
-}
 
-// Social Media
-table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
-}
 
-table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
-}
+    .news-article-hero{
+      background: #ffffff;
 
-table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
-}
+      .columns{
+        .inside-news-article{
+          width: 100%;
 
-.wrapper.secondary {
-  background: #f3f3f3;
+          .hero-top-heading{
+            font-weight: bold;
+            font-family: 'ProximaNovaBlack', Helvetica, sans-serif;
+            font-size: 17px;
+            word-spacing: 2px;
+
+          }
+          .hero-divider{
+            border-color: #FF2D55;
+            border-width: 2px;
+          }
+          .hero-image{
+            width: 100%;
+            padding-top: 12px;
+          }
+          .hero-news-logo{
+            padding-top: 20px;
+            width: 80px;
+
+          }
+          .hero-heading{
+            font-size: 36px;
+            font-weight: bolder;
+            margin: 0;
+            padding-top: 10px;
+            line-height: 1.0;
+          }
+          
+
+          .hero-article-link{
+            color: #7c7c7c;
+            font-size: 12px; 
+            font-family: "ProximaNovaBold", Helvetica, sans-serif;
+            font-weight: bold;
+          }
+
+          .weekend-pursuits-header{
+            margin-top: 40px;
+          }
+          .weekend-pursuits-header, tbody,  tr, th{
+            padding-bottom: 0;
+          }
+          .suggestion-row:first-child{
+            margin-top: 10px;
+          }
+          .suggestion-row{
+            margin-top: 15px;
+            height: 186px;
+            
+            .table, tr, th{
+              padding: 0 0 3px 0;
+            }
+
+            .suggestion-image-col{
+              width: 248px;
+              padding-bottom: 15px;
+
+
+              @media screen and (max-width: 35em){ //small 550px
+                width: 100% !important;
+              }
+
+              .suggestion-image{
+                @media screen and (max-width: 35em){ //small 550px
+                  width: 300px;
+                  margin: 0 auto;
+                  float: center;
+                  text-align: center;
+                }
+                
+                width: 248px;
+                height: 186px;
+              }
+            }
+
+            .suggestion-heading-col{
+              width: 330px;
+              padding-bottom: 15px;
+
+              .suggestion-heading{
+                @media screen and (max-width: 35em){ //small 550px
+                }
+              }
+
+              .suggestion-sub-heading{
+                @media screen and (max-width: 35em){ //small 550px
+                }
+              }
+
+              .hero-article-link{
+                @media screen and (max-width: 35em){ //small 550px
+                }
+              }
+
+              @media screen and (max-width: 35em){ //small 550px
+                width: 100% !important;
+                margin: 0 auto;
+                  float: center;
+                text-align: center;
+              }
+              // @media screen and (min-width: 35em) and (max-width: 39em){ //small-medium
+              // }
+              .table, tbody, tr, th{
+                padding-left: 10px;
+
+                @media screen and (max-width: 35em){ //small 550px
+                  padding: 0;
+                }
+              }
+              .suggestion-heading-bottom{
+                font-family: "DrukTextMedium", Georgia, serif;
+                font-size: 16px;
+
+                .suggestion-heading-bottom-bold{
+                  font-weight: 800;
+                  font-family: "DrukTextMedium", Georgia, serif;
+                  font-size: 16px;
+
+  
+  
+                }
+
+              }
+
+              
+    
+              .hero-newsaudio-logo{
+                width: 115px;
+                padding-bottom: 10px;
+              }
+              .suggestions-news-logo{
+                width: 70px;
+                padding-bottom: 10px;
+
+              }
+              .suggestion-heading{
+                font-size: 18px;
+                font-family: "DrukTextMedium", Georgia, serif;
+                font-weight: 800;
+                margin: 0;
+                margin-bottom: 0; 
+                line-height: 1.0; 
+              }
+
+              .suggestion-sub-heading{
+                font-family: "PracticeBook", Georgia, serif;
+              }
+
+              .hero-article-link{
+                margin-top: 10px;
+              }
+            }
+          
+      
+          }
+
+          .footer-section{
+            margin-top: 40px;
+            .columns{
+
+              p:first-child{
+                font-size: 20px;
+                font-family: 'PracticeBlack', Georgia, serif;
+                margin-bottom: 5px;
+              }
+
+              p:last-child{
+                font-size: 15px;
+              }
+            }
+          }
+
+          .footer-image{
+            margin-top: 75px;
+          }
+          
+          
+          & > tbody > tr > th > table > tbody > tr > th {
+            padding: 20px 20px;
+          }
+        }
+
+        
+
+      }
+
+    }
+
+  }
+  .footer{
+    .columns{
+      .footer-logo{
+        width: 75px;
+        filter: drop-shadow(1px 1px 1px rgb(199, 199, 199));
+      }
+
+      a{
+        text-decoration: underline;
+        color: #666666;
+      }
+
+      p{
+        text-align: center;
+        color: #666666;
+        font-size: 12px;
+        margin-bottom: 20px; 
+      }
+
+    }
+    
+  }
 }
+// @media screen and (max-width: 39.9375em){ //small
+//   background: blue;
+// }
+// @media screen and (max-width: 40em){ //medium
+
+  
+// }
+
+// @media screen and (max-width: 40em) and (max-width: 63.9375em){ //medium
+
+// }
+
+
+
+
+
+
+// .container.header {
+//   background: #f3f3f3;
+// }
+
+// .body-drip {
+//   border-top: 8px solid #663399;
+// }
+
+// // Full Width Headers
+
+// .header .columns {
+//   padding-bottom: 0;
+// }
+
+// .header p {
+//   color: #fff;
+//   padding-top: 15px;
+// }
+
+// .header .wrapper-inner {
+//   padding: 20px;
+// }
+
+// .header .container {
+//   background: transparent;
+// }
+
+// // Social Media
+// table.button.facebook table td {
+//   background: #3B5998 !important;
+//   border-color: #3B5998;
+// }
+
+// table.button.twitter table td {
+//   background: #1daced !important;
+//   border-color: #1daced;
+// }
+
+// table.button.google table td {
+//   background: #DB4A39 !important;
+//   border-color: #DB4A39;
+// }
+
+// .wrapper.secondary {
+//   background: #f3f3f3;
+// }
