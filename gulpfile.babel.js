@@ -108,6 +108,25 @@ function server(done) {
   done();
 }
 
+var deploy = require('gulp-gh-pages');
+
+gulp.task('deploy', gulp.series('build', async function (){
+  gulp.src('dist')
+    .pipe($.prompt.confirm('make sure everything goodie'))
+    .pipe(deploy({
+      remoteUrl: "https://github.com/muhammadarif2113/apple-newsletter-email.git",
+      branch: "main"
+    }))
+}));
+
+// gulp.task('deploy', gulp.series('build', async function (){
+//   gulp.src('dist')
+//   .pipe(deploy({
+//     remoteUrl: "https://github.com/muhammadarif2113/apple-newsletter-email.git",
+//     branch: "main"
+//   }))
+// }));
+
 // Watch for file changes
 function watch() {
   gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, inline, browser.reload));
